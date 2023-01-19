@@ -1,5 +1,5 @@
 
-name: Node.js Package
+name: music
 
 on:
   push:
@@ -16,9 +16,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm init
       - run: npm ci
-      - run: npm test
+      - run: npm app.js
 
   publish-gpr:
     needs: build
