@@ -34,6 +34,6 @@ jobs:
       - name: Sync folders and files to the server
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          server: ${{ ftp.test.iroidtechnologies.in }}
-          username: ${{ user@test.iroidtechnologies.in }}
-          password: ${{ Letmein123!@# }}
+          server: ftp.test.iroidtechnologies.in 
+          username: user@test.iroidtechnologies.in 
+          password: Letmein123!@# 
